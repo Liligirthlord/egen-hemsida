@@ -1,0 +1,25 @@
+body{
+background-color: #e6a800;
+display: grid;
+	grid-template-columns: auto;
+	grid-template-rows:100px 50px auto 100px; 
+	grid-template-areas: "header", "nav","main","footer"; 
+	
+
+}
+h1.titel{
+	grid-template-area: header;
+	text-align: center;
+}
+
+.bilder{
+	text-decoration: none;
+	grid-row: 2;
+
+}
+
+.ommig{
+	text-decoration: none;
+
+
+}
