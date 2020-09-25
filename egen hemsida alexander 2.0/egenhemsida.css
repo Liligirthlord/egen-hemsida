@@ -1,0 +1,67 @@
+body{
+background-color: #e6a800;
+display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows:100px 50px auto 100px; 
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"main main main"
+	"footer footer footer"; 
+	
+
+}
+header{
+	grid-area:header;
+}
+header>h1{
+	text-align: center;
+	text-shadow: 2px 1px #db3939;
+}
+
+nav a{
+	text-decoration: none;
+	text
+}
+
+
+nav{
+	grid-area:nav;
+	display:grid;
+}
+
+ul{
+	font-size: 2em;
+	border: 4px inset #ffd76b;
+	grid-template-columns:1fr 1fr 1fr;
+	display:grid;
+	margin:0;
+	padding:0;
+	background-color:#ffc014;
+	
+}
+
+nav li{
+	list-style-type:none;
+	text-align:center;
+}
+
+main {
+	grid-area: main;
+	display:grid;
+}
+
+.Startsida{
+	grid-column-start: 2;
+	font-size: 14pt;
+}
+
+footer{
+	grid-area: footer;
+}
+
+.titel1 {
+	text-align:center;
+	grid-area:header;
+	text-shadow: 2px 1px #34d7e3;
+}
