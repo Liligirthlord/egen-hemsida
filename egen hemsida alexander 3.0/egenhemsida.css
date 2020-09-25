@@ -1,0 +1,128 @@
+body{
+background-color: #e6a800;
+display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows:100px 50px auto 100px; 
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"main main main"
+	"footer footer footer"; 
+	
+
+}
+header{
+	grid-area:header;
+}
+header>h1{
+	text-align: center;
+	text-shadow: 2px 1px #db3939;
+}
+
+nav a{
+	text-decoration: none;
+	text
+}
+
+
+nav{
+	grid-area:nav;
+	display:grid;
+}
+
+ul{
+	font-size: 2em;
+	border: 4px inset #ffd76b;
+	grid-template-columns:1fr 1fr 1fr;
+	display:grid;
+	margin:0;
+	padding:0;
+	background-color:#ffc014;
+	
+}
+
+nav li{
+	list-style-type:none;
+	text-align:center;
+}
+
+main {
+	grid-area: main;
+	display:grid;
+}
+
+.Startsida{
+	grid-column-start: 2;
+	font-size: 14pt;
+}
+
+footer{
+	grid-area: footer;
+}
+
+.titel1 {
+	text-align:center;
+	grid-area:header;
+	text-shadow: 2px 1px #6e34eb;
+}
+
+.titel2 {
+	text-align:center;
+	grid-area:header;
+	text-shadow: 2px 1px #6e34eb;
+}
+
+#background{
+	background-color: #5ea333;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows:100px 50px auto 100px; 
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"main main main"
+	"footer footer footer"; 
+} 
+#categories{
+		font-size: 2em;
+	border: 4px inset #2d7500;
+	grid-template-columns:1fr 1fr 1fr;
+	display:grid;
+	margin:0;
+	padding:0;
+	background-image: linear-gradient(#337509,#5ea333,#2d7500);
+	}
+	
+	#backgroundtab{
+		background-color:#9438a8;
+		display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows:100px 50px auto 100px; 
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"main main main"
+	"footer footer footer"; 
+	}
+	
+	table,th,td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+th{ 
+background-color:#ff9c9c;
+font-size: 20pt;
+}
+
+tr:nth-child(2) { background-color:orange; }
+}
+tbody:nth-child(odd) {
+}
+
+tbody:hover td[rowspan], tr:hover td {
+   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}   //Ändrar färg när man tar musen över tabellen
+
+a:hover {
+	background-color: yellow;
+}
