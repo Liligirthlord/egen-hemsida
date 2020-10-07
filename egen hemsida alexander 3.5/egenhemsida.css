@@ -50,7 +50,7 @@ nav{
 	display:grid;
 }
 
-ul{
+nav ul{
 	font-size: 2em;
 	border: 4px inset #ffd76b;
 	grid-template-columns:1fr 1fr 1fr;
@@ -97,6 +97,10 @@ footer{
 	grid-area:header;
 	color:#d1d1d1;
 
+}
+
+ul{ 
+font-size: 20pt;
 }
 
 #background{
@@ -175,18 +179,22 @@ table,th,td {
 }
 
 th{ 
-	background-color:#6b78b0;
+	background-color:#fcba03;
 	font-size: 15pt;
 	text-align:center;
 
 }
 
 tr:nth-child(2) { background-color:#4694d4; }
-}
+
+tr:nth-child(3) { background-color:#fcba03; }
+
+tr:nth-child(4) { background-color:#4694d4; }
+
 tbody:nth-child(odd) {
 }
 
 tbody:hover td[rowspan], tr:hover td {
    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
-}   //Ändrar färg när man tar musen över tabellen
+}   /*Ändrar färg när man tar musen över tabellen
 
