@@ -1,32 +1,31 @@
 body{
-	background-color: #e6a800;
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows:100px 50px auto 100px 100px 100px; 
-	grid-template-areas: 
+	background-color: #e6a800; /*bakgrundsfärgen för hemsidan*/
+	display: grid; 
+	grid-template-columns: 1fr 2fr 1fr; /*skapar 3 kollumner där den mittersta är dubbelt så stor*/
+	grid-template-rows:100px 50px auto 100px 100px 100px;  /*samma som kollumner fast rader och jag har gjort dom i px för att få mer specifika storlekar*/
+	grid-template-areas: /*namnger olika sektioner i sidan så att översta är sidhuvud menyn under osv*/
 	"header header header"
 	"nav nav nav"
 	"main main main"
 	"footer footer footer"; 
-	grid-gap: 15px;
+	grid-gap: 15px; /*så att varje grid får ett utrymme på 15pixlar*/
 
 }
 header{
-	grid-area:header;
+	grid-area:header; /*header hamnar i gridarean "header" vilket ska vara högst upp*/
 }
 header>h1{
-	text-align: center;
-	text-shadow: 2px 1px #db3939;
+	text-align: center; /*centrerar texten*/
+	text-shadow: 2px 1px #db3939; /*gör så att texten får en skugga bakom sig med färgen röd*/
 }
 
 nav a{
-	text-decoration: none;
-	font-size: 20pt;
-	font-family: Helvetica;
+	text-decoration: none; /*tar bort strecket under som indikerar att det är en länk*/
+	font-size: 20pt; /*gör texten 20pt*/
+	font-family: Helvetica; /*byter typsnitt från vanliga till helvetica*/
 }
 
-nav a:hover {
-	background-color: #CA4246;
+nav a:hover { /*gör så att texeten byter färg när man tar sin mus över*/
 	background-image: linear-gradient(
     45deg,
     #CA4246, 
@@ -38,31 +37,30 @@ nav a:hover {
     #8B9862, 
     #476098, 
     #476098, 
-    #A7489B);
-	background-size: 100%;
-	background-repeat: repeat;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
+    #A7489B); /*gör så att man kan ha flera bilder som är åt 45 grader*/
+	background-size: 100%; /*100% gör så att man får med alla färger */ 
+	-webkit-background-clip: text; /*så att färgen "maskeras" på texten och inte läcker*/
+	-webkit-text-fill-color: transparent; /*utan detta så blir det ingen färg alls*/
 }
 
 nav{
-	grid-area:nav;
+	grid-area:nav; 
 	display:grid;
 }
 
 nav ul{
 	font-size: 2em;
-	border: 4px inset #ffd76b;
-	grid-template-columns:1fr 1fr 1fr;
+	border: 4px inset #ffd76b; /*en kant som är infälld*/
+	grid-template-columns:1fr 1fr 1fr; 
 	display:grid;
-	margin:0;
-	padding:0;
+	margin:0; /*tar bort marginalet mellan det de andra gridsen runt om och bordern*/
+	padding:0; /*gör bordern närmare själva texten*/
 	background-color:#ffc014;
 	
 }
 
 nav li{
-	list-style-type:none;
+	list-style-type:none; /*tar bort punkterna i menyn*/
 	text-align:center;
 }
 
@@ -118,7 +116,7 @@ font-size: 20pt;
 img {
 	 height:500px;
 	 width:400px;
-	 border: groove red 10px;
+	 border: groove red 10px; 
 }
 
 #categories{
@@ -166,14 +164,14 @@ img {
 	background-image: url("gifbild.gif");
 	margin:15px;
 	padding:15px;
-	background-repeat: no-repeat;
-	background-size: 1920px 1650px;
+	background-repeat: no-repeat; /*så bilden inte upprepar sig*/
+	background-size: 1920px 1650px; /*annan storlek*/
 }
 		
 	
 table,th,td {
 	border: 1px solid black;
-	border-collapse: collapse;
+	border-collapse: collapse; 
 	width: 100%;
 	grid-column-start:2;
 }
@@ -182,7 +180,6 @@ th{
 	background-color:#fcba03;
 	font-size: 15pt;
 	text-align:center;
-
 }
 
 tr:nth-child(2) { background-color:#4694d4; }
@@ -196,5 +193,5 @@ tbody:nth-child(odd) {
 
 tbody:hover td[rowspan], tr:hover td {
    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
-}   /*Ändrar färg när man tar musen över tabellen
+}   /*Ändrar färg när man tar musen över tabellen*/
 
