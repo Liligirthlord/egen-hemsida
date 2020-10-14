@@ -1,6 +1,6 @@
 body{
 	background-color: #e6a800; /*bakgrundsfärgen för hemsidan*/
-	display: grid; 
+	display: grid; /*Gör så att css förstår att man gör en grid*/
 	grid-template-columns: 1fr 2fr 1fr; /*skapar 3 kollumner där den mittersta är dubbelt så stor*/
 	grid-template-rows:100px 50px auto 100px 100px 100px;  /*samma som kollumner fast rader och jag har gjort dom i px för att få mer specifika storlekar*/
 	grid-template-areas: /*namnger olika sektioner i sidan så att översta är sidhuvud menyn under osv*/
@@ -49,7 +49,7 @@ nav{
 }
 
 nav ul{
-	font-size: 2em;
+	font-size: 2em; /*textstorlek*/
 	border: 4px inset #ffd76b; /*en kant som är infälld*/
 	grid-template-columns:1fr 1fr 1fr; 
 	display:grid;
@@ -61,7 +61,7 @@ nav ul{
 
 nav li{
 	list-style-type:none; /*tar bort punkterna i menyn*/
-	text-align:center;
+	text-align:center; /*centrerar texten*/
 }
 
 main {
@@ -70,7 +70,7 @@ main {
 }
 
 .Startsida{
-	grid-column-start: 2;
+	grid-column-start: 2; /*sätter kollumnen i kollumn två*/
 	font-size: 14pt;
 }
 
@@ -81,7 +81,7 @@ footer{
 .titel1 {
 	text-align:center;
 	grid-area:header;
-	text-shadow: 2px 1px #295200;
+	text-shadow: 2px 1px #295200; /*skugga bakom texten*/ 
 }
 
 .titel2 {
@@ -93,7 +93,7 @@ footer{
 .titel3 {
 	text-align:center;
 	grid-area:header;
-	color:#d1d1d1;
+	color:#d1d1d1; /*ändrar färg*/
 
 }
 
@@ -102,7 +102,7 @@ font-size: 20pt;
 }
 
 #background{
-	background-color: #5ea333;
+	background-color: #5ea333; /*ändrar bakgrundsfärg*/
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows:100px 50px auto 100px; 
@@ -114,8 +114,8 @@ font-size: 20pt;
 }
  
 img {
-	 height:500px;
-	 width:400px;
+	 height:500px; /*ändrar bild storlek vertikalt*/
+	 width:400px; /*ändrar storlek horisontellt*/
 	 border: groove red 10px; 
 }
 
@@ -145,7 +145,7 @@ img {
 	grid-template-columns:1fr 1fr 1fr;
 	margin:0;
 	padding:0;
-	background-image: linear-gradient(#404040,#a3a3a3,#400e0e);
+	background-image: linear-gradient(#404040,#a3a3a3,#400e0e); /*flera färger i som blendar varandra*/
 }
 
 #backgroundtab{
@@ -171,7 +171,7 @@ img {
 	
 table,th,td {
 	border: 1px solid black;
-	border-collapse: collapse; 
+	border-collapse: collapse; /*slår ihop kanterna i din border*/
 	width: 100%;
 	grid-column-start:2;
 }
@@ -182,14 +182,11 @@ th{
 	text-align:center;
 }
 
-tr:nth-child(2) { background-color:#4694d4; }
+tr:nth-child(2) { background-color:#4694d4; } /*ändrar färg på kollumn två i tabellen dom under är samma sak fast olika rader*/
 
 tr:nth-child(3) { background-color:#fcba03; }
 
 tr:nth-child(4) { background-color:#4694d4; }
-
-tbody:nth-child(odd) {
-}
 
 tbody:hover td[rowspan], tr:hover td {
    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
